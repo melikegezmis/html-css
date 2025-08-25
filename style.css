@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,74 +14,333 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  flex-direction: column;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+
+header {
+  background-image: url('public/assets/iteration-1/home-banner.png');
+  width: 99vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #CE2829;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+header img {
+  padding: 20px;
+  margin-top: 20px;
+
 }
 
-.card {
-  padding: 2em;
+header p{
+  font-family: segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FDC913;
+  margin-bottom: 0%;
+  font-size: x-large;
+
 }
 
-.read-the-docs {
-  color: #888;
+header h1{
+  margin: 0;
+  padding: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  line-height: 70px;
+  font-size: 60px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+header a{
+  margin-top: 30px;
+  background-color: #FDC913 ;
+  color:#292929;
+  border-radius: 50px;
+  padding: 10px 50px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
 }
-button:hover {
-  border-color: #646cff;
+
+
+.urunler-section{
+  width: 100%;
+  background-color: white;
+  padding:20px 0px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.urunler{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 300px;
 }
+
+.urunler div{
+  display: flex;
+  align-items: center;
+}
+
+.urunler a{
+  margin: 0px 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.siparis-ver-section{
+  display: flex;
+  flex-direction: row;
+  background-color:#FAF7F2;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.siparis-ver {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#siparis1{ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("public/assets/iteration-2/cta/kart-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 30vw;
+  height: 52vh;
+  margin: 25px 5px;
+
+} 
+
+#siparis1 h2{ 
+  color: white;
+  font-size: 3.2rem;
+  line-height: 50px;
+  font-family: "Avenir";
+  margin: 0px 30px;
+  padding: 0;  
+}
+
+#siparis1 h2:first-child{ 
+  margin-top: 30px;
+}
+
+#siparis1 h2:nth-child(2){ 
+  margin-bottom: 20px;
+}
+
+
+#siparis1 p{
+  margin: 0 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+#siparis1 a{
+  margin: 10px 30px;
+  color: #CE2829;
+  background-color: white;
+  border-radius: 20px;
+  font-size: small;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.siparis { 
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+#siparis2 { 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("public/assets/iteration-2/cta/kart-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin: 10px 5px;
+  width: 30vw;
+  height: 25vh;
+  
+
+} 
+
+#siparis2 h3{ 
+  color: white;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 35px;
+  margin: 0px 20px;
+  padding: 0;  
+}
+
+#siparis2 h3:first-child{ 
+  margin-top: 20px;
+}
+
+#siparis2 h3:nth-child(2){ 
+  margin-bottom: 20px;
+}
+
+
+#siparis2 p {
+  margin: 0 20px;
+  color: white;
+}
+
+#siparis2 a{
+  margin: 10px 20px;
+  color: #CE2829;
+  background-color: white;
+  border-radius: 20px;
+  font-size: small;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+#siparis3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("public/assets/iteration-2/cta/kart-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin: 0px 5px;
+  margin-bottom: 15px;
+  width: 30vw;
+  height: 25vh;
+
+}
+
+#siparis3 h3{ 
+  color:#292929;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 35px;
+  margin: 0px 20px;
+  padding: 0;  
+}
+
+span{
+  color:#CE2829;
+}
+
+#siparis3 h3:first-child{ 
+  margin-top: 20px;
+}
+
+#siparis3 h3:nth-child(2){ 
+  margin-bottom: 20px;
+}
+
+
+#siparis3 p {
+  margin: 0 20px;
+  color: white;
+}
+
+#siparis3 a{
+  margin: 10px 20px;
+  color: #CE2829;
+  background-color: white;
+  border-radius: 20px;
+  font-size: small;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.yazi-section{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAF7F2;
+  width: 100%;
+  height: 20vh;
+  line-height: 20px;
+}
+
+.yazi-section p{
+color: #CE2829;
+font-size: x-large;
+margin-bottom: 0px;
+}    
+
+.yazi-section h2{ 
+  color: #292929;
+  font-size: 30px;
+}
+
+.menuler-section{
+background-color: #FAF7F2;
+height:10vh;
+}
+
+.menuler{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px 300px;
+}
+
+.menuler div{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 7px 15px;
+  border-radius: 40px;
+}
+
+.menuler a{
+  color: #292929;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+#pizza{
+  background-color: #292929;
+}
+
+#pizza a{
+  color:white;
+}
+
+
+
+
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {

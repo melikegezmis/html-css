@@ -1,19 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  color: #FAF7F2
 }
-
 
 body {
   margin: 0;
@@ -25,14 +13,19 @@ body {
 
 
 
+
+
+/*    Header       */
+
+
+
 header {
   background-image: url('public/assets/iteration-1/home-banner.png');
   width: 99vw;
   height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #CE2829;
 }
+
 
 header div{
 display: flex;
@@ -45,24 +38,23 @@ text-align: center;
 header img {
   padding: 20px;
   margin-top: 20px;
-
 }
 
 header p{
-  font-family: segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Satisfy", cursive;
   color: #FDC913;
   margin-bottom: 0%;
-  font-size: x-large;
-
+  font-size: 25px;
 }
 
 header h1{
   margin: 0;
   padding: 0;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: lighter;
   line-height: 70px;
-  font-size: 60px;
+  font-size: 75px;
+  color: white;
 }
 
 header a{
@@ -71,9 +63,15 @@ header a{
   color:#292929;
   border-radius: 50px;
   padding: 10px 50px;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
 }
+
+
+
+
+/*       Ürünler        */
+
 
 
 .urunler-section{
@@ -95,10 +93,16 @@ header a{
 }
 
 .urunler a{
-  margin: 0px 10px;
+  margin: 10px;
   color: black;
   text-decoration: none;
 }
+
+
+
+/*        Sipariş Ver         */
+
+
 
 .siparis-ver-section{
   display: flex;
@@ -119,25 +123,39 @@ header a{
   margin: 20px;
 }
 
+.siparis-ver a{
+  margin: 10px 30px;
+  color: #CE2829;
+  background-color: white;
+  border-radius: 20px;
+  font-size: small;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*      Sipariş 1         */
+
+
 #siparis1{ 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color:white;
   background-image: url("public/assets/iteration-2/cta/kart-1.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: right;
   border-radius: 20px;
   width: 30vw;
   height: 52vh;
   margin: 25px 5px;
-
 } 
 
 #siparis1 h2{ 
-  color: white;
   font-size: 3.2rem;
   line-height: 50px;
-  font-family: "Avenir";
+  font-family: 'Times New Roman', Times, serif;
   margin: 0px 30px;
   padding: 0;  
 }
@@ -150,30 +168,21 @@ header a{
   margin-bottom: 20px;
 }
 
-
 #siparis1 p{
   margin: 0 30px;
-  color: white;
   margin-bottom: 20px;
   font-size: large;
 }
 
-#siparis1 a{
-  margin: 10px 30px;
-  color: #CE2829;
-  background-color: white;
-  border-radius: 20px;
-  font-size: small;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-weight: bold;
 
-}
+
+/*      Sipariş 2         */
+
+
 
 .siparis { 
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -184,12 +193,11 @@ header a{
   background-image: url("public/assets/iteration-2/cta/kart-2.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: right;
   border-radius: 20px;
   margin: 10px 5px;
   width: 30vw;
   height: 25vh;
-  
-
 } 
 
 #siparis2 h3{ 
@@ -210,21 +218,9 @@ header a{
 }
 
 
-#siparis2 p {
-  margin: 0 20px;
-  color: white;
-}
 
-#siparis2 a{
-  margin: 10px 20px;
-  color: #CE2829;
-  background-color: white;
-  border-radius: 20px;
-  font-size: small;
-  text-decoration: none;
-  padding: 10px 30px;
-  font-weight: bold;
-}
+/*      Sipariş 3         */
+
 
 #siparis3 {
   display: flex;
@@ -233,6 +229,7 @@ header a{
   background-image: url("public/assets/iteration-2/cta/kart-3.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: right;
   border-radius: 20px;
   margin: 0px 5px;
   margin-bottom: 15px;
@@ -263,21 +260,9 @@ span{
 }
 
 
-#siparis3 p {
-  margin: 0 20px;
-  color: white;
-}
 
-#siparis3 a{
-  margin: 10px 20px;
-  color: #CE2829;
-  background-color: white;
-  border-radius: 20px;
-  font-size: small;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
+/*      Ortadaki Yazilar       */
+
 
 .yazi-section{ 
   display: flex;
@@ -291,15 +276,26 @@ span{
 }
 
 .yazi-section p{
-color: #CE2829;
-font-size: x-large;
-margin-bottom: 0px;
+  font-family: "Satisfy", cursive;
+  color: #CE2829;
+  font-size: 30px;
+  margin-bottom: 0px;
 }    
 
 .yazi-section h2{ 
   color: #292929;
   font-size: 30px;
 }
+
+.yazi-section span{
+  color:#292929;
+}
+
+
+
+/*     Menüler      */
+
+
 
 .menuler-section{
 background-color: #FAF7F2;
@@ -310,7 +306,7 @@ height:10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0px 300px;
+  margin: 0px 20%;
 }
 
 .menuler div{
@@ -331,8 +327,246 @@ height:10vh;
   background-color: #292929;
 }
 
-#pizza a{
+#pizza a{ 
   color:white;
+}
+
+
+
+/*     Yemekler     */
+
+
+
+.yemekler-section{
+  background-color: #FAF7F2;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 14%;
+  padding-bottom: 60px;
+}
+
+.yemek-kisimlari{
+  margin: 20px 90px;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 15px;
+}
+
+.yemekler{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+  color: #292929;
+  padding: 2%;
+  border-top: 15px solid white;
+}
+
+#yemek1 {
+  background: url("public/assets/iteration-2/pictures/food-1.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-color: white;
+  flex: 1;
+  margin: 10px;
+}
+
+#yemek2 {
+  background: url("public/assets/iteration-2/pictures/food-2.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-color: white;
+  flex: 1;
+  margin: 10px 12px;
+}
+
+#yemek3 {
+  background: url("public/assets/iteration-2/pictures/food-3.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-color: white;
+  flex: 1;
+  margin: 10px;
+}
+
+.yemekler-section h4{
+  margin: 0px 10px;
+}
+
+.yemek-p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.p-kaydir{
+  position: relative;
+  left: 15px;
+}
+
+.para{
+  font-weight: bold;
+}
+
+
+
+/*        Footer        */
+
+
+
+.footer-section{
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-kisimlari{
+  padding: 20px 20%;
+  padding-bottom: 40px;
+}
+
+
+.footer-sutun{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 80px;
+  margin-bottom: 10px;
+}
+
+
+
+/*     İletişim     */
+
+
+
+.iletisim{
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.footer-logo{
+  object-position: left;
+}
+
+.footer-logo img{
+  width: 150px;
+  margin: 30px 0px;
+}
+
+.iletisim-resim{
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  margin: 12px 0;
+  gap: 45px;
+}
+
+.iletisim-yazi{
+  display: flex;
+  flex-direction: column;
+  line-height: 33px;
+  font-size: 14px;
+}
+
+.iletisim-yazi div{
+  line-height: 8px;
+}
+
+.footer-kisimlari h6{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*      Hot Menu      */
+
+
+
+.hot-menu{
+  position: relative;
+  right: 40px;
+}
+
+.hot-menu h6{
+  margin-top: 80px;
+  line-height: 15px;
+}
+
+.hot-menu nav{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hot-menu a{
+  text-decoration: none;
+  color: #FAF7F2;
+  font-size: 14px;
+}
+
+
+
+/*     İnstagram       */ 
+
+
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram h6{
+  margin-top: 70px;
+  line-height: 1px;
+}
+
+.instagram-resim{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instagram-resim img{
+  width: 80px;
+}
+
+.instagram-resim-satir-1, .instagram-resim-satir-2{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+ /*     Son Part      */
+
+
+.son-part{
+  border-top: 2px solid #292929;
+}
+
+.son-part p{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 0px 20%;
+  font-size: small;
 }
 
 
@@ -340,17 +574,273 @@ height:10vh;
 
 
 
+/*          @Media          */
 
 
-@media (prefers-color-scheme: light) {
+
+@media (max-width: 480px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #FAF7F2;
+    background-color: #FAF7F2;
   }
-  a:hover {
-    color: #747bff;
+  
+  body{
+    min-width: 320px;
   }
-  button {
-    background-color: #f9f9f9;
+
+
+
+  /*       Header        */
+
+
+
+  header {
+    background-size: auto;
+    background-position: center 35%;
+    height: 115vh;
+    width: 100vw;
   }
+
+  header div{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header img{
+    width: 70vw;
+    margin-top: 40px;
+  }
+
+  header p{
+    display: none;
+  }
+
+  header h1{
+    margin: 10px 12%;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  header div :nth-child(4){
+    margin-top: 0;
+  }
+
+  header a{
+    margin-top: 2rem;
+  }
+
+
+  /*      Ürünler        */
+
+
+
+  .urunler-section{
+    padding: 10px 0px;
+    width: 100vw;
+  }
+
+  .urunler-kisim{
+    padding: 10px 3.5vw;
+  }
+
+  .urunler{
+    margin: 0;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+  }
+
+  .urunler div{
+    margin: 15px 10px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .urunler div:first-child{
+    margin-right: 40px;
+  }
+
+
+  /*      Sipariş Ver      */
+
+
+  .siparis-ver-section{
+    width: 100vw;
+    height: auto;
+  }
+  
+  .siparis-ver{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0px;
+  }
+
+  #siparis1{
+    width: 90vw;
+    height: 40vh;
+    margin: 10px 0px;
+  
+  }
+
+  #siparis1 p{
+    margin-bottom: 5px;
+    font-size: 4.5vw;
+  }
+
+  .siparis{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+  #siparis2, #siparis3{
+    width: 90vw;
+    height: 30vh;
+    margin: 10px 0;
+  }
+
+
+/*       Ortadaki Yazılar       */
+
+
+.yazi-section {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  line-height: 40px;
+  height: 30vh;
+  width: 100vw;
+}
+
+
+.yazi-section p{
+  margin: 0;
+  font-size: 6vw;
+}
+
+.yazi-section h2 span{
+  display: block;
+  color: #292929;
+}
+
+
+/*       Menüler        */
+
+
+
+.menuler-section{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  height: 40vh; 
+  width: 100vw;
+  margin: 0;
+}
+
+.menuler-kisim{
+  margin: 10px 1vw;
+}
+
+
+.menuler{
+ margin: 0;
+ width: 100%;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.menuler div:first-child{
+  margin-right: 60px;
+}
+
+.menuler div{
+  margin: 10px 5px;
+}
+
+.menuler div img{
+  width: 5vh;
+}
+
+
+
+/*       Yemekler        */
+
+
+
+.yemekler-section{
+  margin: 0;
+  padding: 20px 0;
+  height: 100%;
+  width: 100vw;
+}
+
+.yemek-kisimlari{
+  margin: 5px 10px;
+  flex-direction: column;
+  height: 1270px;
+}
+
+
+
+/*     Footer        */
+
+
+.footer-section{
+  width: 100vw;
+}
+
+.footer-kisimlari{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.footer-sutun{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hot-menu{
+  margin-left: 45px;
+}
+
+.hot-menu h6{
+  margin-top: 50px;
+}
+
+.instagram-resim, .instagram-resim-satir-1, .instagram-resim-satir-2{
+  gap: 10px;
+}
+
+
+/*      Son Kısım          */
+
+
+.son-part{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.son-part p{
+  margin: 0px;
+  padding: 20px 0px;
+  margin-bottom: 15px;
+  position: relative;
+  right: 55px;
+}
+
+
+
 }
